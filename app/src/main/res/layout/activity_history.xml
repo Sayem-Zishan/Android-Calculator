@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="150"
+    android:orientation="horizontal"
+    android:stretchColumns="*">
+
+    <TableRow android:layout_weight="140"
+        android:layout_height="fill_parent"
+        >
+        <ScrollView>
+        <TextView
+            android:id="@+id/textViewHist"
+            style="@style/TextThemeHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        </ScrollView>
+    </TableRow>
+
+    <TableRow
+        android:layout_weight="10"
+        >
+
+        <Button
+            android:id="@+id/btnClear"
+            style="@style/BtnTheme"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:text="Clear" />
+    </TableRow>
+
+
+</TableLayout>
